@@ -1,0 +1,158 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Playfair Display", "Arial", serif;
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  background: #ffffff;
+}
+
+ul,
+p,
+h2 {
+  margin: 0;
+}
+/* MENU */
+.conteiner {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.menu-bar {
+  padding-top: 72px;
+  padding-bottom: 98px;
+}
+
+.site-navigation {
+  width: 572px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+}
+
+.site-navigation-item {
+  display: inline-block;
+  width: 20%;
+  margin: 0 auto;
+  font-size: 14px;
+  list-style: none;
+  color: #626262;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.site-navigation-item:first-child,
+.site-navigation-item:hover,
+.site-navigation-item:focus {
+  color: #03a9f4;
+}
+
+.site-navigation-item:first-child:hover {
+  color: #626262;
+}
+
+/* MAIN CONTENT */
+.content {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.content-item {
+  display: inline-block;
+  width: 420px;
+  text-align: left;
+  margin-bottom: 140px;
+}
+
+.content-item:not(:nth-child(2n)) {
+  margin-right: 60px;
+}
+
+.content-item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.article-image {
+  margin-bottom: 30px;
+}
+
+.article-item {
+  margin-bottom: 26px;
+  font-family: "Ubuntu", serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #b4ad9e;
+  text-transform: uppercase;
+}
+
+.article-title {
+  margin-bottom: 36px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.article-about {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+/* LOAD BUTTON */
+button {
+  display: block;
+  margin: auto;
+  margin-top: 52px;
+  margin-bottom: 70px;
+  background-color: #fff;
+}
+
+button:hover,
+button:focus {
+  background-color: #e4e4e4;
+}
+.load {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 24px;
+  padding: 22px 34px;
+  color: #626262;
+  border-width: 1px;
+  border-color: #626262;
+  border-style: solid;
+}
+
+/* VISUALLY HIDDEN ELEMENTS */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
