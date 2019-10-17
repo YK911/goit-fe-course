@@ -5,64 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Homework 01</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu:300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Подумать как убрать тег h1 или место тега h2 использовать <div> -->
+    <h1 class="visually-hidden">Module 03 HW-03</h1>
     <header class="menu-bar">
       <nav>
-        <ul>
-          <li class="menu"><a href="#">lifestyle</a></li>
-          <li class="menu"><a href="#">photography</a></li>
-          <li class="menu"><a href="#">music</a></li>
-          <li class="menu"><a href="#">travel</a></li>
+        <ul class="site-navigation">
+          <li class="site-navigation-item1"><a href="#">Lifestyle</a></li>
+          <li class="site-navigation-item2"><a href="#">Photodiary</a></li>
+          <li class="site-navigation-item3"><a href="#">Music</a></li>
+          <li class="site-navigation-item4"><a href="#">Travel</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section>
-        <article>
-          <img src="img/top-left.png" alt="Здесь должна быть фотография" />
-          <p>lifestyle</p>
-          <h2 class="subscribe_article">More than just a music festival</h2>
-          <p>
+        <article class="content-item">
+          <img
+            class="article-image"
+            src="img/top-left.png"
+            alt="Здесь должна быть фотография"
+            width="420"
+            height="280"
+          />
+          <p class="article-item">lifestyle</p>
+          <h2 class="article-title">More than just a music festival</h2>
+          <p class="article-about">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris.
           </p>
         </article>
         <article>
-          <img src="img/top-right.png" alt="Здесь должна быть фотография" />
-          <p>lifestyle</p>
-          <h2 class="subscribe_article">Life tastes better with coffee</h2>
-          <p>
+          <img
+            class="article-image"
+            src="img/top-right.png"
+            alt="Здесь должна быть фотография"
+            width="419"
+            height="280"
+          />
+          <p class="article-item">lifestyle</p>
+          <h2 class="article-title">Life tastes better with coffee</h2>
+          <p class="article-about">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris.
           </p>
         </article>
         <article>
-          <img src="img/btm-left.png" alt="Здесь должна быть фотография" />
-          <p>photodiary</p>
-          <h2 class="subscribe_article">American dream</h2>
-          <p>
+          <img
+            class="article-image"
+            src="img/btm-left.png"
+            alt="Здесь должна быть фотография"
+            width="420"
+            height="280"
+          />
+          <p class="article-item">photodiary</p>
+          <h2 class="article-title">American dream</h2>
+          <p class="article-about">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris.
           </p>
         </article>
         <article>
-          <img src="img/btm-right.png" alt="Здесь должна быть фотография" />
-          <p>photodiary</p>
-          <h2 class="subscribe_article">A day exploring the Alps</h2>
-          <p>
+          <img
+            class="article-image"
+            src="img/btm-right.png"
+            alt="Здесь должна быть фотография"
+            width="419"
+            height="280"
+          />
+          <p class="article-item">photodiary</p>
+          <h2 class="article-title">A day exploring the Alps</h2>
+          <p class="article-about">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris.
           </p>
         </article>
       </section>
-      <button class="load">load more</button>
+      <button class="load">Load more</button>
     </main>
   </body>
 </html>
