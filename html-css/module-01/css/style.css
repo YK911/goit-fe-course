@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Playfair Display", "Arial", serif;
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.site-navigation {
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.site-navigation a {
+  text-decoration: none;
+}
+
+.site-navigation-item1 a {
+  color: #03a9f4;
+}
+
+.site-navigation-item1 a:hover {
+  color: #9555af;
+  border-color: currentColor;
+}
+
+.site-navigation a:hover {
+  color: #03a9f4;
+}
+
+/* .content-item {
+  display: inline-block;
+  width: 420px;
+}
+
+.content-item:not(:nth-child(2n)) {
+  margin-right: 60px;
+} */
+
+.article-item {
+  font-family: "Ubuntu", serif;
+  font-weight: light;
+  line-height: 17px;
+  color: #b4ad9e;
+  text-transform: uppercase;
+}
+
+.article-title {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 36px;
+}
+
+.article-about {
+  font-weight: normal;
+  line-height: 29px;
+}
+
+.load {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #626262;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
