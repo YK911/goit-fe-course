@@ -42,11 +42,14 @@ h2 {
 
 .site-navigation-item {
   display: inline-block;
-  width: 20%;
-  margin: 0 auto;
+}
+
+.site-navigation-item:not(:last-child) {
+  margin-right: 60px;
 }
 
 .site-navigation-item a {
+  display: block;
   font-size: 14px;
   list-style: none;
   color: #626262;
