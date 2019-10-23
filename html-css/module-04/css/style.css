@@ -1,0 +1,244 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Open Sans", "Arials", sans-serif;
+  color: #555252;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* VISUALLY HIDDEN ELEMENTS */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* MENU */
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.menu {
+  margin-top: 36px;
+  margin-bottom: 104px;
+  font-size: 0;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.menu-section {
+  float: right;
+  margin-top: 6px;
+}
+
+.menu-section li {
+  float: left;
+}
+
+.menu-section-navigation a {
+  float: left;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #0f0101;
+  font-weight: 700;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+  line-height: 11px;
+  text-decoration: none;
+}
+
+.menu-section-navigation:not(:last-child) {
+  margin-right: 36px;
+}
+
+.menu-section-navigation a:hover,
+.menu-section-navigation a:focus {
+  color: #1abc9c;
+}
+
+/* FEATURED PRODUCTS SECTION*/
+.features {
+  font-family: "Roboto", sans-serif;
+}
+
+.section-title {
+  font-size: 48px;
+  color: #515151;
+  font-weight: 900;
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 32px;
+  margin-bottom: 92px;
+  padding: 0;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 164px;
+  height: 7px;
+  margin: 0 auto;
+  margin-top: 34px;
+  background-color: #4ec6ab;
+}
+
+.features-menu {
+  margin-bottom: 102px;
+  list-style-type: none;
+}
+
+.features-menu-item {
+  float: left;
+  height: auto;
+  width: 255px;
+}
+
+/* устанавливает всем элементам, кроме каждого
+четвертого, правый маржин в 30 пикселов*/
+.features-menu-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+/* устанавливает всем элементам, кроме последних
+четвертых, нижний маржин в 30 пикселов*/
+.features-menu-item:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 30px;
+}
+
+.item-name {
+  float: left;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 900;
+  letter-spacing: -0.36px;
+  line-height: 32px;
+  text-indent: 12px;
+  text-transform: uppercase;
+  width: 201px;
+  background-color: #323232;
+}
+
+.item-price {
+  float: right;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 900;
+  letter-spacing: -0.28px;
+  line-height: 32px;
+  text-indent: 12px;
+  text-transform: uppercase;
+  width: 54px;
+  background-color: #8c8c8c;
+}
+
+.item-price:before {
+  content: "$";
+}
+
+.wrapper:hover .item-name,
+.wrapper:focus .item-name {
+  background-color: #1abc9c;
+}
+
+.wrapper:hover .item-price,
+.wrapper:focus .item-price {
+  background-color: #7fd9c7;
+}
+
+/* BLOG SECTION */
+.blog-news {
+  margin-bottom: 82px;
+  list-style-type: none;
+}
+
+.blog-content {
+  float: left;
+  width: 350px;
+}
+
+.blog-content:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.blog-img {
+  margin-bottom: 18px;
+}
+
+.blog-article {
+  font-size: 18px;
+  color: #555252;
+  font-weight: 600;
+  letter-spacing: -0.28px;
+  line-height: 26px;
+  margin-bottom: 26px;
+}
+
+.blog-article::after {
+  content: "";
+  display: block;
+  width: 136px;
+  height: 3px;
+  margin-top: 6px;
+  background-color: #4ec6ab;
+}
+
+.blog-text {
+  font-size: 14px;
+  color: #555252;
+  font-weight: 400;
+  letter-spacing: -0.28px;
+  line-height: 26px;
+  margin-bottom: 18px;
+}
+
+.load {
+  display: block;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: -0.32px;
+  line-height: 26px;
+  width: 160px;
+  height: 52px;
+  padding: 14px 40px;
+  border-radius: 3px;
+  background-color: #4ec6ab;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.39);
+  text-decoration: none;
+}
+
+.load:hover,
+.load:focus {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.6);
+}
