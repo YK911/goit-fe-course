@@ -89,7 +89,7 @@ input[type="radio"].visually-hidden {
 /* FEATURED PRODUCTS SECTION*/
 .features {
   font-family: "Roboto", sans-serif;
-  margin-bottom: 102px;
+  padding-bottom: 102px;
 }
 
 .section-title {
@@ -178,7 +178,7 @@ input[type="radio"].visually-hidden {
 
 /* BLOG SECTION */
 .blog {
-  margin-bottom: 82px;
+  padding-bottom: 82px;
 }
 
 .blog-news {
