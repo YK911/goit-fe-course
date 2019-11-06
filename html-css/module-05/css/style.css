@@ -1,0 +1,336 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Open Sans", "Arials", sans-serif;
+  color: #555252;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/* VISUALLY HIDDEN ELEMENTS */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* MENU */
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.menu {
+  padding-top: 38px;
+  padding-bottom: 32px;
+  font-size: 0;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.menu-section {
+  float: right;
+  margin-top: 6px;
+}
+
+.menu-section li {
+  float: left;
+}
+
+.menu-section-navigation a {
+  display: block;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #0f0101;
+  font-weight: 700;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+  line-height: 11px;
+  text-decoration: none;
+}
+
+.menu-section-navigation:not(:last-child) {
+  margin-right: 36px;
+}
+
+.menu-section-navigation a:hover,
+.menu-section-navigation a:focus {
+  color: #1abc9c;
+}
+
+/* SLIDER */
+.slider {
+  background-image: url(https://picua.org/images/2019/11/04/10831b06a44966a955adc426ad4bb9de.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.slider-wrapper {
+  position: relative;
+  width: 1110px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.slider-control {
+  position: absolute;
+  background-color: rgb(26, 188, 156);
+  width: 104px;
+  height: 104px;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-control:hover {
+  background-color: rgba(78, 198, 171, 0.65);
+}
+
+.prev {
+  left: 0;
+  background-image: url(https://picua.org/images/2019/11/04/95cd93fe285f7f25a13b4d61c6e3f464.png);
+}
+.next {
+  right: 0;
+  background-image: url(https://picua.org/images/2019/11/04/c36ae5adf3bffb083ce34e7ebd0ee18d.png);
+}
+.slider-carousel {
+  position: absolute;
+  top: 50%;
+  left: 16%;
+  transform: translateY(-50%);
+}
+.slider-title {
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: -1.2px;
+  margin-bottom: 36px;
+}
+.slider-text {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: -1.2px;
+}
+
+/* COLLECTION SECTION */
+.products {
+  font-family: "Roboto", sans-serif;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #e9f0fd;
+}
+.products-title {
+  font-size: 48px;
+  color: #515151;
+  font-weight: 900;
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 32px;
+  margin-bottom: 80px;
+  padding: 0;
+}
+.products-title::after {
+  content: "";
+  display: block;
+  width: 164px;
+  height: 7px;
+  margin: 0 auto;
+  margin-top: 32px;
+  background-color: #1abc9c;
+}
+
+.products-item {
+  width: 1110px;
+  list-style: none;
+  margin: 0 auto;
+}
+.products-item-list {
+  position: relative;
+  float: left;
+  height: auto;
+  width: 255px;
+}
+.products-item-list:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+.products-item-list:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 30px;
+}
+.products-item-list:hover .hidden-layer {
+  opacity: 1;
+  transition: 0.6s all;
+}
+.overlay {
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+}
+.product__item-wrapper {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  letter-spacing: -0.36px;
+  line-height: 32px;
+  text-indent: 12px;
+  text-transform: uppercase;
+  background: rgb(50, 50, 50);
+}
+.product__item-wrapper:hover {
+  background: rgb(26, 188, 156);
+}
+.product__item-link {
+  display: block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.product__item-title {
+  float: left;
+  width: 80%;
+}
+.product__item-price {
+  display: block;
+  float: right;
+  width: 20%;
+  background: rgba(255, 255, 255, 0.44);
+}
+.product__item-price:before {
+  content: "$";
+}
+
+/* HIDDEN LAYER */
+.wrapper-img {
+  position: relative;
+}
+.hidden-layer:hover {
+  opacity: 1;
+  transition: 0.6s all;
+}
+.hidden-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(115, 115, 115, 0.5);
+  background-clip: padding-box;
+}
+.hidden-layer-allbtns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hidden-layer-btn {
+  float: left;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
+  height: 48px;
+}
+.hidden-layer-btn:hover,
+.hidden-layer-btn:last-child:hover {
+  background-color: rgb(26, 188, 156);
+  transition: 0.4s ease-in-out;
+}
+.hidden-layer-btn:not(:last-child) {
+  width: 48px;
+}
+.hidden-layer-btn:nth-child(-n + 2) {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+.hidden-layer-btn:last-child {
+  width: 164px;
+  background-color: rgb(50, 50, 50);
+}
+.hidden-layer-btn:first-child {
+  background-image: url(https://picua.org/images/2019/11/05/0d2bee18b3677aa38d6a4dbf95f9b26e.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hidden-layer-btn:nth-child(2) {
+  background-image: url(https://picua.org/images/2019/11/05/a99e343ecfdff93bb1f8f990015dac6d.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hidden-layer-btn:nth-child(3) {
+  background-image: url(https://picua.org/images/2019/11/05/5dbc60ba0927aea63e27140764f097c4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hidden-layer-btn:last-child {
+  position: relative;
+  background-image: url(https://picua.org/images/2019/11/05/acef21f7e3ad4f3596a948dd0cc4624b.png);
+  background-repeat: no-repeat;
+  background-position: center left 8%;
+}
+.cart {
+  position: absolute;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  top: 50%;
+  left: 40%;
+  transform: translateY(-50%);
+}
+
+/* FOOTER */
+.info {
+  background-color: rgb(50, 50, 50);
+  height: 88px;
+  text-align: center;
+  line-height: 88px;
+}
+.info-title {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(254, 254, 254);
+}
+.footer-link {
+  text-decoration: none;
+  color: #1abc9c;
+}
