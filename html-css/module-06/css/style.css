@@ -1,0 +1,393 @@
+:root {
+  --font-kaushan: "Kaushan Script", cursive;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --color-darkgray: #333333;
+  --color-silver: #999999;
+  --color-aqua: #95e1d3;
+  --color-fuchsia: #f38181;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* VISUALLY HIDDEN ELEMENTS */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 84px;
+  margin-bottom: 104px;
+}
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  width: 490px;
+}
+
+.menu__list-link {
+  position: relative;
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  color: var(--color-aqua);
+  text-transform: uppercase;
+  transition: color 1s linear;
+}
+.menu__list-link::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-fuchsia);
+  margin-top: 10px;
+  opacity: 0;
+}
+
+.menu__list-link:hover,
+.menu__list-link:focus {
+  color: var(--color-fuchsia);
+}
+
+.menu__list-link:hover::after,
+.menu__list-link:focus::after {
+  opacity: 1;
+  transition: all 0.2s linear;
+}
+
+/* SERVISES */
+.services {
+  margin-bottom: 98px;
+}
+.title-undertitle {
+  display: block;
+  font-size: 24px;
+  font-family: var(--font-kaushan);
+  color: var(--color-darkgray);
+  margin-bottom: 18px;
+  text-transform: none;
+}
+
+.title {
+  font-size: 30px;
+  font-family: var(--font-montserrat);
+  color: var(--color-darkgray);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 66px;
+}
+
+.title::after {
+  display: block;
+  content: "";
+  background-color: var(--color-fuchsia);
+  width: 60px;
+  height: 3px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.services__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services__list-item {
+  width: 382px;
+  padding-left: 82px;
+  background-image: url();
+}
+
+.services__list-item:first-child {
+  background-image: url(https://picua.org/images/2019/11/07/9f3b8412096cda4995eadb39c9e42c21.png);
+  background-repeat: no-repeat;
+  background-position: 5% 0;
+  margin-bottom: 98px;
+}
+
+.services__list-item:nth-child(2) {
+  background-image: url(https://picua.org/images/2019/11/07/fb717a138798f6f39d3d249ddefbb227.png);
+  background-repeat: no-repeat;
+  background-position: 5% 0;
+}
+
+.services__list-item:nth-child(3) {
+  background-image: url(https://picua.org/images/2019/11/07/4d07cdfc0c0dd6aab4108e67c9447fd2.png);
+  background-repeat: no-repeat;
+  background-position: 5% 0;
+}
+
+.services__list-item:nth-child(4) {
+  background-image: url(https://picua.org/images/2019/11/07/c984242adc86e34811140ff81e62a365.png);
+  background-repeat: no-repeat;
+  background-position: 5% 0;
+}
+
+.services__list-item:nth-child(5) {
+  background-image: url(https://picua.org/images/2019/11/07/0288409820727b875590cea5da6f5a22.png);
+  background-repeat: no-repeat;
+  background-position: 5% 0;
+}
+.services__list-item:last-child {
+  background-image: url(https://picua.org/images/2019/11/07/edd02dd8a8eae63c4146de1ba589d7a6.png);
+  background-repeat: no-repeat;
+  background-position: 5% 0;
+}
+
+.service__list-title {
+  font-size: 14px;
+  font-family: var(--font-montserrat);
+  color: var(--color-darkgray);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.services__list-desc {
+  font-size: 15px;
+  color: var(--color-silver);
+  font-family: var(--font-roboto);
+  line-height: 1.6;
+}
+
+/* OUR TEAM */
+.team {
+  margin-bottom: 82px;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__list-item {
+  position: relative;
+}
+
+.team__list-item:hover .wrapper-socials,
+.team__list-item:hover .team__list-icons {
+  opacity: 1;
+  transition: 0.5s linear;
+}
+
+.wrapper-socials {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 380px;
+  height: 470px;
+  background-image: linear-gradient(
+    rgba(243, 129, 129, 0.9),
+    rgba(252, 227, 138, 0.9)
+  );
+  box-shadow: 10px 10px 0 0 var(--color-aqua);
+  opacity: 0;
+}
+
+.team__title-desc {
+  font-size: 15px;
+  font-family: var(--font-roboto);
+  color: var(--color-silver);
+  width: 980px;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 92px;
+}
+
+.team__list-img {
+  margin-bottom: 30px;
+}
+.team__list-title {
+  font-size: 14px;
+  font-family: var(--font-montserrat);
+  color: var(--color-darkgray);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.team__list-desc {
+  font-size: 15px;
+  font-family: var(--font-roboto);
+  color: var(--color-silver);
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* SOCIALS-ICONS */
+
+.team__list-socials {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 228px;
+}
+
+.team__list-socials a {
+  display: block;
+  background-color: #fce38a;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 56px;
+  height: 56px;
+  /* opacity: 0; */
+}
+
+.team__list-linkfacebook {
+  background-image: url(https://picua.org/images/2019/11/07/0474b616e0841940c225007d33322d6f.png);
+}
+
+.team__list-linktwitter {
+  background-image: url(https://picua.org/images/2019/11/07/8a7566a564a56091a6c99c2ede5c10f9.png);
+}
+
+.team__list-linkpinterest {
+  background-image: url(https://picua.org/images/2019/11/07/2cc7a28d36476bfb216d79947c9348d8.png);
+}
+
+.team__list-linkinstagram {
+  background-image: url(https://picua.org/images/2019/11/07/81142a5bc77e419df1a55df140129985.png);
+}
+
+.team__list-socials a:hover {
+  background-color: #95e1d3;
+  transition: 0.5s linear;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer__desc {
+  font-size: 14px;
+  font-family: var(--font-montserrat);
+  color: var(--color-darkgray);
+}
+
+.footer__link {
+  color: var(--color-fuchsia);
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+}
+.input-text {
+  display: flex;
+  font-size: 15px;
+  font-family: var(--font-roboto);
+  color: rgb(204, 204, 204);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.6;
+  align-items: center;
+  border: 1px solid #e7e7e7;
+  width: 234px;
+  height: 40px;
+}
+.input-text::placeholder {
+  font-size: 15px;
+  font-family: var(--font-roboto);
+  color: rgb(204, 204, 204);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.6;
+  text-align: left;
+}
+.input-text:hover::placeholder,
+.input-text:focus::placeholder {
+  transform: scale(1) translateX(100%);
+  transform-origin: 0% 0%;
+  transition: 0.5s all;
+}
+
+.input-box-btn {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-montserrat);
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 150px;
+  height: 40px;
+  border: none;
+  background-color: #95e1d3;
+}
+/* ЭФФЕКТ БЛЕСКА */
+.input-box-btn::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(
+    to bottom,
+    rgba(229, 172, 142, 0),
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(229, 172, 142, 0)
+  );
+  transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+.input-box-btn:hover::after,
+.input-box-btn:focus::after {
+  animation: sheen 1s forwards;
+}
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
