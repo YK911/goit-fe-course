@@ -58,6 +58,7 @@ input[type="radio"].visually-hidden {
   height: 84px;
   margin-bottom: 104px;
 }
+/* margin-bottom заменить на padding-bottom */
 .menu__list {
   display: flex;
   justify-content: space-between;
@@ -98,6 +99,8 @@ input[type="radio"].visually-hidden {
 .services {
   margin-bottom: 98px;
 }
+/* margin-bottom заменить на padding-bottom */
+
 .title-undertitle {
   display: block;
   font-size: 24px;
@@ -194,6 +197,7 @@ input[type="radio"].visually-hidden {
 .team {
   margin-bottom: 82px;
 }
+/* margin-bottom заменить на padding-bottom */
 
 .team__list {
   display: flex;
