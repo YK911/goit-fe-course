@@ -159,13 +159,15 @@ input[type="radio"].visually-hidden {
 
 /* CONTACTS */
 .contact {
-  background-image: url(https://picua.org/images/2019/11/11/ea5e1559743c0c1b6a259f2aff7dad28.jpg);
+  background-color: var(--color-darkgray);
+  background-image: url(https://picua.org/images/2019/11/11/23112d8e700afa159c10b8d763284f4f.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: auto;
+  background-position: right;
   min-height: 678px;
   padding: 106px 0 116px 0;
 }
+
 .invertcolor {
   color: var(--color-white);
 }
@@ -215,10 +217,10 @@ input[type="radio"].visually-hidden {
 .contact__form-textarea::placeholder {
   color: var(--color-silverlight);
 }
-.contact__form-input:focus:valid {
+.contact__form-input[required]:focus:valid {
   box-shadow: 0px 0px 4px 4px rgba(86, 171, 47, 0.75);
 }
-.contact__form-input:focus:invalid {
+.contact__form-input[required]:focus:invalid {
   box-shadow: 0px 0px 4px 4px rgba(233, 32, 56, 0.75);
 }
 .contact__form-btn {
@@ -235,4 +237,13 @@ input[type="radio"].visually-hidden {
   height: 66px;
   margin: 0 auto;
   cursor: pointer;
+}
+.contact__form-textarea:focus {
+  outline: none;
+}
+.contact__form-textarea[required]:focus:valid {
+  box-shadow: 0px 0px 4px 4px rgba(86, 171, 47, 0.75);
+}
+.contact__form-textarea[required]:focus:invalid {
+  box-shadow: 0px 0px 4px 4px rgba(233, 32, 56, 0.75);
 }
