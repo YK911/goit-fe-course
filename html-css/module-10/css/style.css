@@ -461,8 +461,7 @@ input {
     display: flex;
     font-size: 15px;
     font-family: var(--font-roboto300);
-    color: rgb(204, 204, 204);
-    font-weight: 300;
+    color: var(--color-grey);
     font-style: italic;
     line-height: 1.6;
     -webkit-box-align: center;
@@ -476,51 +475,41 @@ input {
 .footer__form-input::-webkit-input-placeholder {
     font-size: 15px;
     font-family: var(--font-roboto300);
-    color: rgb(204, 204, 204);
-    font-weight: 300;
+    color: var(--color-silverlight);
     font-style: italic;
     line-height: 1.6;
-    text-align: left;
 }
 
 .footer__form-input::-moz-placeholder {
     font-size: 15px;
     font-family: var(--font-roboto300);
-    color: rgb(204, 204, 204);
-    font-weight: 300;
+    color: var(--color-silverlight);
     font-style: italic;
     line-height: 1.6;
-    text-align: left;
 }
 
 .footer__form-input:-ms-input-placeholder {
     font-size: 15px;
     font-family: var(--font-roboto300);
-    color: rgb(204, 204, 204);
-    font-weight: 300;
+    color: var(--color-silverlight);
     font-style: italic;
     line-height: 1.6;
-    text-align: left;
 }
 
 .footer__form-input::-ms-input-placeholder {
     font-size: 15px;
     font-family: var(--font-roboto300);
-    color: rgb(204, 204, 204);
-    font-weight: 300;
+    color: var(--color-silverlight);
     font-style: italic;
     line-height: 1.6;
-    text-align: left;
 }
 
 .footer__form-input::placeholder {
     font-size: 15px;
     font-family: var(--font-roboto300);
-    color: rgb(204, 204, 204);
-    font-weight: 300;
+    color: var(--color-silverlight);
     font-style: italic;
     line-height: 1.6;
-    text-align: left;
 }
 
 .footer__form-input:hover::-webkit-input-placeholder,
@@ -589,6 +578,7 @@ input {
     height: 40px;
     border: none;
     background-color: rgb(149, 225, 211);
+    cursor: pointer;
 }
 
 .footer__form-btn:hover {
