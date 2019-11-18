@@ -1,0 +1,4 @@
+@mixin pseudo($display, $content) {
+  content: $content;
+  display: $display;
+}
